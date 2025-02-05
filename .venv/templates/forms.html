@@ -1,0 +1,103 @@
+    {% extends "forms-basic.html" %}
+
+    {% block title %} PDS {% endblock %}
+
+    {% block form %}
+        
+    <div class="container my-5">
+        <h2 class="text-center">Personal Data Sheet (PDS)</h2>
+    
+        <!-- PDS Form -->
+        <form>
+            <!-- Personal Information Section -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="birthdate" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control" id="birthdate" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender">
+                        <option selected>Choose...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="civilStatus" class="form-label">Civil Status</label>
+                    <select class="form-select" id="civilStatus">
+                        <option selected>Choose...</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contactNumber" required>
+                </div>
+            </div>
+    
+            <!-- Address Information Section -->
+            <h4>Address Information</h4>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="street" class="form-label">Street</label>
+                    <input type="text" class="form-control" id="street">
+                </div>
+                <div class="col-md-6">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="province" class="form-label">Province</label>
+                    <input type="text" class="form-control" id="province">
+                </div>
+                <div class="col-md-6">
+                    <label for="postalCode" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="postalCode">
+                </div>
+            </div>
+    
+            <!-- Educational Background Section -->
+            <h4>Educational Background</h4>
+            <div class="mb-3">
+                <label for="degree" class="form-label">Degree</label>
+                <input type="text" class="form-control" id="degree">
+            </div>
+            <div class="mb-3">
+                <label for="school" class="form-label">School Name</label>
+                <input type="text" class="form-control" id="school">
+            </div>
+            <div class="mb-3">
+                <label for="yearGraduated" class="form-label">Year Graduated</label>
+                <input type="number" class="form-control" id="yearGraduated">
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+  
+    {% endblock %}
