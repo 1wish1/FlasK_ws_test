@@ -4,13 +4,13 @@
 
     {% block form %}
         
-    <div class="container my-5">
+    <div class="container">
         <h2 class="text-center">Personal Data Sheet (PDS)</h2>
     
         <!-- PDS Form -->
         <form>
             <!-- Personal Information Section -->
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <label for="firstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="firstName" required>
@@ -21,7 +21,7 @@
                 </div>
             </div>
     
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <label for="birthdate" class="form-label">Birth Date</label>
                     <input type="date" class="form-control" id="birthdate" required>
@@ -37,7 +37,7 @@
                 </div>
             </div>
     
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <label for="civilStatus" class="form-label">Civil Status</label>
                     <select class="form-select" id="civilStatus">
@@ -56,7 +56,7 @@
     
             <!-- Address Information Section -->
             <h4>Address Information</h4>
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <label for="street" class="form-label">Street</label>
                     <input type="text" class="form-control" id="street">
@@ -67,7 +67,7 @@
                 </div>
             </div>
     
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-6">
                     <label for="province" class="form-label">Province</label>
                     <input type="text" class="form-control" id="province">
@@ -80,24 +80,51 @@
     
             <!-- Educational Background Section -->
             <h4>Educational Background</h4>
-            <div class="mb-3">
+            <div class="form-group">
                 <label for="degree" class="form-label">Degree</label>
                 <input type="text" class="form-control" id="degree">
             </div>
-            <div class="mb-3">
+            <div class="form-group">
                 <label for="school" class="form-label">School Name</label>
                 <input type="text" class="form-control" id="school">
             </div>
-            <div class="mb-3">
+            <div class="form-group">
                 <label for="yearGraduated" class="form-label">Year Graduated</label>
                 <input type="number" class="form-control" id="yearGraduated">
             </div>
     
             <!-- Submit Button -->
-            <div class="text-center">
+            <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
+        
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">    
+                    </div>
+                    <div class="card-body">
+                            <section id="section_2"></section>
+                                <div class="w-50 h-50 bg-success ">
+                                    <p>asdasdda</p>
+                                </div>
+                            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    
+        
+
+
+        <div class="text-center mt-4">
+            <a href="#section_1"><button type="submit" class="btn btn-primary">1</button> </a>
+            <a href="#section_2"><button type="submit" class="btn btn-primary">2</button> </a>
+        </div>
     </div>
-  
+    
     {% endblock %}
